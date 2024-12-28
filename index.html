@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home Page </title>
+    <link rel="stylesheet" href="css.css">
+</head>    
+<body>
+    <button id="sticky-button" onclick="scrollToAbout()">
+        <!-- O conteúdo do botão será uma imagem -->
+    </button>
+    
+    <!-- Seção About -->
+
+    <header>
+<div class= "header-container">
+    <div class="header-left">
+    <p1>Diogo Ludovino</p1>
+    <p>diogoludobini@gmail.com</p>
+    <p>+15166641</p>
+    </div>
+    <nav class="header-nav">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#recommendations">Recommendations</a>
+    </nav>
+</div>
+</header>
+<main>
+    <section id="about">
+        <div class="image-text">
+            <img src="https://rihappy.vtexassets.com/arquivos/ids/6227773-800-auto?v=638472419500470000&width=800&height=auto&aspect=true"  width="150" height="150">
+        <h2>Hi, I'm Diogo Ludovino!</h2>
+ <p> I am currently completing the IBM Full Stack Developer course and am focused 
+            on developing my career as a Full Stack Developer. I have experience in 
+            building applications and microservices, with a strong focus on both the 
+            application and presentation layers. I frequently work with technologies like 
+            JavaScript, HTML, and CSS to create interactive and responsive user interfaces.</p>
+ </div>
+        </section>
+        <br><br>
+    
+    <section id= "skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML<br><span>2 years experience</span></div>
+            <div class="skill-card">JavaScript<br><span>1.5 years experience</span></div>
+            <div class="skill-card">Java<br><span>5 years experience</span></div>
+            <div class="skill-card">React<br><span>1 years experience</span></div>
+            <div class="skill-card">Noje.js<br><span>1 years experience</span></div>
+            <div class="skill-card">CSS<br><span>2 years experience</span></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Chatbot:</strong> Developed a secure website integrated with chatbot using HTML, CSS, JavaScript, and IBM Watson Assistant.</li>
+            <li><strong>Sentiment Analyzer:</strong> Created a sentiment analyzer for eCommerce product reviews using IBM NLU.</li>
+            <li><strong>Fashion Website:</strong> Designed a multi-page website for a fashion brand with a shopping cart and Stripe payment gateway.</li>
+        </ul>
+    </section>
+<section id="recommendations">
+    <h2>Recommendations</h2>
+    <div class="recommendation-cards">
+        <div class="recommendation-card">
+            “Diogo is a very quick learner and quickly grasps key concepts of Web development...”
+        </div>
+        <div class="recommendation-card">
+            “Working with Diogo has been an awesome experience. She is highly knowledgeable...”
+        </div>
+        <div class="recommendation-card">
+            “I had worked along with Diogo during the initial phase of our venture which needed Web development...”
+        </div>
+</section>
+        
+        <form id="recommendation-form">
+            <p></p><h3>Leave a Recommendation</h3>
+            <input type="text" id="name" placeholder="Name (Optional)">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button onclick="showPopup()">Submit</button>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Thanks for the Recommendation!</p>
+                </div>
+            </div>
+        </form>
+   
+    
+</main>
+
+
+
+</body>
+
+
+<script src="script.js"></script>
+</html>

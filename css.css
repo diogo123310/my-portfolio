@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px;
+    height: 100%;
+}
+
+
+header {
+    background-color: blueviolet;
+    color: white;
+    font-family: Tahoma;
+    padding: 1px;
+    position: relative;
+    height:100%;
+    
+}
+.header-left{
+margin-left: 40px;
+margin-top: 40px;
+}
+header p1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.head-container{
+max-width: 1500px;
+padding:0 20px;
+display: flex;
+}
+.header-nav{
+    position:absolute;
+    right:60px;
+    top:40px;
+    color: white;
+    margin-left: 30px;
+    font-weight: bold;
+    padding: 0 15px;
+    
+    
+}
+.header-nav a {
+    padding: 0 15px;
+    color:white;
+    text-decoration: none;
+}
+.header-nav a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+.image-text img {
+    float: left; /* Faz a imagem flutuar à esquerda */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+h2,h3 {
+    color: blueviolet;
+}
+.skills-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+    padding: 1em;
+    text-align:center;
+}
+.skill-card{
+    border: 1px black;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: #d695f5;
+    width: 200px;
+    height: 100px;
+
+}
+ul li{
+    margin-bottom: 20px;
+    padding:20px;
+    border-bottom: 1px solid #ccc;
+    width:50%;
+}
+ul li:last-child{
+    border-bottom: none;
+}
+
+.recommendation-cards{
+display:flex;
+gap:1em;
+padding: 1em;
+align-content: center;
+}
+.recommendation-card{
+    border: 2px black;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    width: 200px;
+    height: 100px;
+    margin-left: 60px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    display:block;
+}
+form {
+    margin: 1em auto;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea, form button {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-size: 1em;
+}
+form button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: darkviolet;
+}
+#recommendation-form{
+    flex-direction: column; /* Organiza os itens de cima para baixo */
+    justify-content: flex-end; /* Coloca o formulário no final da página */
+}
+
+
+
+
+.popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fica fixo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Garante que o pop-up ficará acima de outros elementos */
+}
+
+/* Conteúdo da janela pop-up */
+.popup-content {
+    background-color: rgb(236, 163, 236);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do botão de fechar */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#sticky-button {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância do botão da parte inferior */
+    right: 20px; /* Distância do botão da parte direita */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/12815788-estilo-de-icone-de-seta-para-cima-gratis-vetor.jpg'); /* URL da sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área do botão */
+    background-position: center; /* Centraliza a imagem no botão */
+    border: none;
+    border-radius: 50%; /* Torna o botão arredondado */
+    cursor: pointer; /* Indica que é clicável */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#sticky-button:hover {
+    opacity: 0.8; /* Efeito de opacidade ao passar o mouse sobre o botão */
+}
